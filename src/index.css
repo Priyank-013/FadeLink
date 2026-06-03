@@ -657,3 +657,26 @@ body::before {
     margin-bottom: 0.75rem;
     padding-right: 4px;
 }
+
+@media (max-width: 768px) {
+    .page {
+        grid-template-columns: 1fr;
+    }
+
+    .left-col {
+        display: none;
+    }
+
+    .right-col {
+        padding: 2rem 1rem;
+    }
+
+    .card {
+        max-width: 100%;
+        padding: 2rem 1.5rem;
+    }
+
+    .left-title {
+        font-size: 36px;
+    }
+}
