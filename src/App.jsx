@@ -28,7 +28,7 @@ function App() {
         formData.append("zipName", zipName);
 
         try {
-            const response = await fetch("http://localhost:8080/upload", {
+            const response = await fetch("https://fadelink-backend-production.up.railway.app/upload", {
                 method: "POST",
                 body: formData,
             });
