@@ -664,11 +664,22 @@ body::before {
     }
 
     .left-col {
+        display: flex;
+        padding: 2rem 1.5rem 0 1.5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .left-title {
+        font-size: 32px;
+    }
+
+    .left-features {
         display: none;
     }
 
     .right-col {
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem 2rem 1rem;
     }
 
     .card {
@@ -676,7 +687,7 @@ body::before {
         padding: 2rem 1.5rem;
     }
 
-    .left-title {
-        font-size: 36px;
+    .stats-row {
+        justify-content: center;
     }
 }
