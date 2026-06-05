@@ -691,14 +691,3 @@ body::before {
         justify-content: center;
     }
 }
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.brand-logo {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-}

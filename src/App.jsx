@@ -74,14 +74,9 @@ function App() {
                     <span className="stat-pill">No Signup</span>
                     <span className="stat-pill">Auto Expires</span>
                 </div>
-                <div className="brand">
-                    <img
-                        src="/FadeLink logo-2.png"
-                        alt="FadeLink Logo"
-                        className="brand-logo"
-                    />
+                
                     <p className="left-tag">FadeLink</p>
-                </div>
+                
                 <p className="left-tag subtitle">Fast · Free · Temporary</p>
                 <h2 className="left-title">Share files<br />instantly</h2>
                 <p className="left-desc">Upload any file, get a shareable link in seconds. Links expire automatically — no clutter, no signup.</p>
