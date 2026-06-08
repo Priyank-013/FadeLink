@@ -1,0 +1,10 @@
+[33m4d19817[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to 4d19817
+[33m9b0032b[m HEAD@{1}: reset: moving to 9b0032b
+[33m4570f1b[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2}: rebase (finish): returning to refs/heads/main
+[33m4570f1b[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{3}: rebase (continue): clarity
+[33m9b0032b[m HEAD@{4}: pull origin main --rebase (start): checkout 9b0032b4b16ebcb939b6789211a1b336dc9e3f42
+[33m9a9528e[m HEAD@{5}: commit: clarity
+[33m8147665[m HEAD@{6}: commit: update fev
+[33m3c45395[m HEAD@{7}: commit: update fev
+[33m04fcaf5[m HEAD@{8}: commit: update fev
+[33m18e1d7d[m HEAD@{9}: commit: update fev
