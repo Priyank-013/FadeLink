@@ -44,27 +44,20 @@ function App() {
     };
 
 const formatExpiry = (isoString) => {
-    const dateObj = new Date(isoString); // should be UTC with Z
+    const dateObj = new Date(isoString);
 
-    const expiryIST = new Date(
-        dateObj.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
-    );
-
-    const day = String(expiryIST.getDate()).padStart(2, "0");
-    const month = String(expiryIST.getMonth() + 1).padStart(2, "0");
-    const year = expiryIST.getFullYear();
-
-    const time = expiryIST.toLocaleTimeString("en-IN", {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: true,
+    const date = dateObj.toLocaleDateString("en-IN", {
         timeZone: "Asia/Kolkata"
     });
 
-    return {
-        date: `${day}/${month}/${year}`,
-        time
-    };
+    const time = dateObj.toLocaleTimeString("en-IN", {
+        timeZone: "Asia/Kolkata",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true
+    });
+
+    return { date, time };
 };
 
     const formatFileSize = (bytes) => {
