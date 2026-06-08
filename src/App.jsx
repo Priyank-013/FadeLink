@@ -43,19 +43,22 @@ function App() {
         }
     };
 
- const formatExpiry = (isoString) => {
-    const dateObj = new Date(isoString);
+const formatExpiry = (isoString) => {
+    const dateObj = new Date(isoString); // should be UTC with Z
 
-    const day = String(dateObj.getDate()).padStart(2, "0");
-    const month = String(dateObj.getMonth() + 1).padStart(2, "0");
-    const year = dateObj.getFullYear();
+    const expiryIST = new Date(
+        dateObj.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
+    );
 
-    const time = dateObj.toLocaleTimeString("en-IN", {
-        timeZone: "Asia/Kolkata",
+    const day = String(expiryIST.getDate()).padStart(2, "0");
+    const month = String(expiryIST.getMonth() + 1).padStart(2, "0");
+    const year = expiryIST.getFullYear();
+
+    const time = expiryIST.toLocaleTimeString("en-IN", {
         hour: "2-digit",
         minute: "2-digit",
-        second: "2-digit",
-        hour12: true
+        hour12: true,
+        timeZone: "Asia/Kolkata"
     });
 
     return {
