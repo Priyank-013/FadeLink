@@ -43,16 +43,26 @@ function App() {
         }
     };
 
-    const formatExpiry = (isoString) => {
-        const dateObj = new Date(isoString);
-        const day = String(dateObj.getDate()).padStart(2, "0");
-        const month = String(dateObj.getMonth() + 1).padStart(2, "0");
-        const year = dateObj.getFullYear();
-        return {
-            date: `${day}/${month}/${year}`,
-            time: dateObj.toLocaleTimeString(),
-        };
+ const formatExpiry = (isoString) => {
+    const dateObj = new Date(isoString);
+
+    const day = String(dateObj.getDate()).padStart(2, "0");
+    const month = String(dateObj.getMonth() + 1).padStart(2, "0");
+    const year = dateObj.getFullYear();
+
+    const time = dateObj.toLocaleTimeString("en-IN", {
+        timeZone: "Asia/Kolkata",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: true
+    });
+
+    return {
+        date: `${day}/${month}/${year}`,
+        time
     };
+};
 
     const formatFileSize = (bytes) => {
         if (!bytes) return '0 B';
